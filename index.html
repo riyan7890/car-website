@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AutoElite | Premium Car Showcase</title>
+  <link href="https://cdn.jsdelivr.net/npm/lucide@latest/dist/lucide.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar-content">
+        <button class="menu-toggle">
+          <i data-lucide="menu"></i>
+        </button>
+        
+        <div class="logo">AutoElite</div>
+        
+        <div class="nav-links">
+          <a href="#" class="active">Home</a>
+          <a href="inventory.html">Inventory</a>
+          <a href="financing.html">Financing</a>
+          
+          <a href="about.html">About</a>
+        </div>
+        
+        <div class="nav-actions">
+          <div class="search-container">
+            <form class="search-form">
+              <div class="search-input-container">
+                <i data-lucide="search"></i>
+                <input type="text" placeholder="Search cars..." class="search-input">
+                <button type="button" class="search-close">
+                  <i data-lucide="x"></i>
+                </button>
+              </div>
+            </form>
+            <button class="search-toggle">
+              <i data-lucide="search"></i>
+            </button>
+          </div>
+          
+          <button class="compare-btn">
+            <i data-lucide="git-compare"></i>
+          </button>
+          
+          <button class="account-btn">
+            <i data-lucide="user"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="mobile-menu">
+    <div class="mobile-menu-header">
+      <div class="logo">AutoElite</div>
+      <button class="mobile-menu-close">
+        <i data-lucide="x"></i>
+      </button>
+    </div>
+    <div class="mobile-menu-links">
+      <a href="#" class="active">Home</a>
+      <a href="#">Inventory</a>
+      <a href="#">Financing</a>
+      <a href="#">About</a>
+    </div>
+  </div>
+  
+  <main>
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-info">
+            <h1>Tesla <span>Model S Plaid</span></h1>
+            <p>The Tesla Model S Plaid is the highest-performance version of the Model S, with incredible acceleration and range.</p>
+            
+            <div class="spec-grid">
+              <div class="spec-card">
+                <span class="spec-label">0-60 MPH</span>
+                <span class="spec-value">1.99s</span>
+              </div>
+              <div class="spec-card">
+                <span class="spec-label">Top Speed</span>
+                <span class="spec-value">200 mph</span>
+              </div>
+              <div class="spec-card">
+                <span class="spec-label">Horsepower</span>
+                <span class="spec-value">1020 HP</span>
+              </div>
+              <div class="spec-card">
+                <span class="spec-label">Price</span>
+                <span class="spec-value">$89,990</span>
+              </div>
+            </div>
+            
+            <div class="hero-buttons">
+              <button class="btn-primary">Schedule Test Drive</button>
+              <button class="btn-secondary">View Details</button>
+            </div>
+          </div>
+          
+          <div class="hero-image-container">
+            <div class="image-actions">
+              <button><i data-lucide="heart"></i></button>
+              <button><i data-lucide="share-2"></i></button>
+              <button><i data-lucide="bookmark"></i></button>
+            </div>
+            
+            <div class="car-image-wrapper">
+              <img src="https://images.pexels.com/photos/3729464/pexels-photo-3729464.jpeg" alt="Tesla Model S Plaid" class="car-image">
+              
+              <button class="car-nav prev">
+                <i data-lucide="chevron-left"></i>
+              </button>
+              <button class="car-nav next">
+                <i data-lucide="chevron-right"></i>
+              </button>
+              
+              <div class="car-dots">
+                <button class="dot active"></button>
+                <button class="dot"></button>
+                <button class="dot"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="browse-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Browse Our Collection</h2>
+          
+          <div class="filter-container">
+            <button class="filter-toggle">
+              <i data-lucide="filter"></i>
+              <span>Filters</span>
+              <i data-lucide="chevron-down" class="filter-chevron"></i>
+            </button>
+            
+            <div class="filter-dropdown">
+              <div class="filter-group">
+                <label>Category</label>
+                <select>
+                  <option value="">All Categories</option>
+                  <option value="SUV">SUV</option>
+                  <option value="Sedan">Sedan</option>
+                  <option value="Sports">Sports</option>
+                  <option value="Luxury">Luxury</option>
+                </select>
+              </div>
+              
+              <div class="filter-group">
+                <label>Price Range</label>
+                <div class="price-range">
+                  <input type="number" placeholder="Min">
+                  <input type="number" placeholder="Max">
+                </div>
+              </div>
+              
+              <div class="filter-group">
+                <label>Fuel Type</label>
+                <select>
+                  <option value="">All Fuel Types</option>
+                  <option value="Gasoline">Gasoline</option>
+                  <option value="Diesel">Diesel</option>
+                  <option value="Electric">Electric</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- <div class="car-grid">
+          <div class="car-card">
+            <div class="car-card-image">
+              <img src="https://images.pexels.com/photos/3729464/pexels-photo-3729464.jpeg" alt="Tesla Model S Plaid">
+              <div class="car-rating">
+                <i data-lucide="star" class="filled"></i>
+                <span>4.9</span>
+              </div>
+            </div> -->
+<!--             
+            <div class="car-card-content">
+              <div class="car-header">
+                <h3>Tesla Model S Plaid</h3>
+                <span>$89,990</span>
+              </div>
+              
+              <div class="car-specs">
+                <div class="spec">
+                  <span class="spec-name">Mileage:</span>
+                  <span class="spec-value">1,500 mi</span>
+                </div>
+                <div class="spec">
+                  <span class="spec-name">Fuel:</span>
+                  <span class="spec-value">Electric</span>
+                </div>
+                <div class="spec">
+                  <span class="spec-name">Trans:</span>
+                  <span class="spec-value">Automatic</span>
+                </div>
+                <div class="spec">
+                  <span class="spec-name">HP:</span>
+                  <span class="spec-value">1020</span>
+                </div>
+              </div>
+              
+              <div class="car-actions">
+                <button class="btn-primary">
+                  View Details
+                  <i data-lucide="arrow-right"></i>
+                </button>
+                <button class="compare-btn" title="Add to comparison">
+                  <i data-lucide="git-compare"></i>
+                </button>
+              </div>
+            </div>
+          </div> -->
+          
+          <!-- More car cards would go here
+        </div>
+      </div>
+    </section> -->
+
+
+
+
+
+    <header class="page-header">
+        <h1>Our Inventory</h1>
+        <p>Browse through our latest collection of premium vehicles.</p>
+      </header>
+      <section class="inventory-section">
+        <div class="container">
+          <h1>Our Inventory</h1>
+          <div class="car-grid">
+            <!-- Card 1 -->
+            <div class="car-card">
+              <img src="https://images.pexels.com/photos/3729464/pexels-photo-3729464.jpeg" alt="Tesla Model S">
+              <h3>Tesla Model S</h3>
+              <p>$89,990 • Electric • 1,500 mi</p>
+              <button class="btn-primary">View Details</button>
+            </div>
+      
+            <!-- Card 2 -->
+            <div class="car-card">
+              <img src="https://images.pexels.com/photos/1149831/pexels-photo-1149831.jpeg" alt="BMW M5">
+              <h3>BMW M5</h3>
+              <p>$75,500 • Gasoline • 12,000 mi</p>
+              <button class="btn-primary">View Details</button>
+            </div>
+      
+            <!-- Card 3 -->
+            <div class="car-card">
+              <img src="https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg" alt="Audi A6">
+              <h3>Audi A6</h3>
+              <p>$62,000 • Hybrid • 8,400 mi</p>
+              <button class="btn-primary">View Details</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    
+<!--SERVICE-->
+
+<header class="page-header">
+    <h1>Our Services</h1>
+    <p>From purchase to maintenance — we’ve got you covered.</p>
+  </header>
+
+  <section class="services-section container">
+    <div class="service-card">
+      <img src="https://images.pexels.com/photos/4489743/pexels-photo-4489743.jpeg" alt="Financing Service">
+      <div class="service-info">
+        <h3>Financing Assistance</h3>
+        <p>Flexible car loans with fast approval and low interest tailored to you.</p>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <img src="https://images.pexels.com/photos/97075/pexels-photo-97075.jpeg" alt="Trade-In Service">
+      <div class="service-info">
+        <h3>Vehicle Trade-In</h3>
+        <p>Upgrade your ride by trading in your current vehicle with fair valuation.</p>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <img src="https://images.pexels.com/photos/4793221/pexels-photo-4793221.jpeg" alt="Test Drive Service">
+      <div class="service-info">
+        <h3>Scheduled Test Drives</h3>
+        <p>Book a test drive at your convenience at any of our partner locations.</p>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <img src="https://images.pexels.com/photos/3807320/pexels-photo-3807320.jpeg" alt="Maintenance Service">
+      <div class="service-info">
+        <h3>Maintenance & Repair</h3>
+        <p>Certified technicians ready to maintain and repair your vehicle promptly.</p>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+    
+    <section class="comparison-modal">
+      <div class="comparison-content">
+        <div class="comparison-header">
+          <h2>
+            <i data-lucide="bar-chart-2"></i>
+            Compare Models
+          </h2>
+          <button class="close-comparison">
+            <i data-lucide="x"></i>
+            Close
+          </button>
+        </div>
+        
+        <div class="comparison-empty">
+          <div class="empty-icon">
+            <i data-lucide="git-compare"></i>
+          </div>
+          <h3>No cars selected for comparison</h3>
+          <p>Add cars to compare by clicking the compare button on car cards.</p>
+          <button class="btn-primary">Back to browsing</button>
+        </div>
+        
+        <div class="comparison-grid hidden">
+          <!-- Comparison content would be dynamically inserted here -->
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="logo">AutoElite</div>
+          <p>Premium car showcase and dealership services</p>
+        </div>
+        
+        <div class="footer-links">
+          <div class="link-group">
+            <h4>Inventory</h4>
+            <a href="#">New Arrivals</a>
+            <a href="#">Featured</a>
+            <a href="#">Electric Vehicles</a>
+            <a href="#">Luxury Cars</a>
+          </div>
+          
+          <div class="link-group">
+            <h4>Services</h4>
+            <a href="#">Financing</a>
+            <a href="#">Trade-In</a>
+            <a href="#">Test Drive</a>
+            <a href="#">Maintenance</a>
+          </div>
+          
+          <div class="link-group">
+            <h4>Company</h4>
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+            <a href="#">Careers</a>
+            <a href="#">Blog</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2023 AutoElite. All rights reserved.</p>
+        <div class="social-links">
+          <a href="#"><i data-lucide="facebook"></i></a>
+          <a href="#"><i data-lucide="twitter"></i></a>
+          <a href="#"><i data-lucide="instagram"></i></a>
+          <a href="#"><i data-lucide="youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/lucide.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
